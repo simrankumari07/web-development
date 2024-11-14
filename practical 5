@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Basic JavaScript Practical</title> 
+</head> 
+<body> 
+    <h1>JavaScript Basics</h1> 
+    <p id="output"></p> 
+    <script> 
+        alert("Welcome to Basic JavaScript!"); 
+ 
+        function greetUser(name){ 
+            return "Hello, "+ name +"!"; 
+        } 
+ 
+        let userName=prompt("Enter your name:"); 
+        document.getElementById('output').innerHTML=greetUser(userName); 
+ 
+        let numbers=[1,2,3,4,5]; 
+ 
+        for(let i=0;i<numbers.length;i++){ 
+            console.log("Number: "+numbers[i]); 
+        } 
+ 
+        if(numbers.length>3){ 
+            console.log("The array has more than 3 elements."); 
+        }else{ 
+            console.log("The array has 3 or fewer element."); 
+        } 
+    </script> 
+</body> 
+<body> 
+ 
+    <h1>Advanced JavaScript DOM Manipulation</h1> 
+ 
+    <div id="person-info"> 
+        <p id="name"></p> 
+        <p id="age"></p> 
+        <p id="location"></p> 
+    </div> 
+ 
+    <button onclick="updatePerson()">Update Person Info</button> 
+ 
+    <script> 
+        
+        let person = { 
+            name: "Krish Baria", 
+            age: 21, 
+            location: "Godhra" 
+        }; 
+ 
+        function updatePerson() { 
+   document.getElementById('name').innerHTML = "Name: " + person.name; 
+            document.getElementById('age').innerHTML = "Age: " + person.age; 
+            document.getElementById('location').innerHTML = "Location: " + person.location; 
+        } 
+    </script> 
+ 
+</body> 
+</html> 
