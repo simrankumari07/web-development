@@ -1,117 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <style>
-    h1 {
-      text-align: center;
-    }
-  </style>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<style>
-  body {
-    text-align: left;
-    background-color: rgb(247, 111, 254);
-  }
-</style>
-
-<body>
-<form>
-  <h1>REGISTRATION </h1>
-  <form name="REGISTRATION" target="&blank" method="post" action="">
-
-    FNAME:<input type="label"><br><br>
-    MNAME:<input type="label"><br><br>
-    LNAME:<input type="label"><br><br>
-
-
-    <label>SELECT GENDER</label>
-    <input type="radio" name="gender" value="male">Male
-    <input type="radio" name="gender" value="fmale">Female
-    <br>
-    <br>
-    ADDRESS:<textarea cols="60" rows="5" value="address"></textarea><br><br>
-    <label>DEPARTMENT</label>
-    <select>
-      <option value="CP">CP</option>
-      <option value="CSD">CSD</option>
-      <option value="IT">IT</option>
-    </select>
-    <br><br>
-   
-    <LABEL>HOBBIES</LABEL>
-
-    <input type="checkbox" name="play" value="play">play
-    <input type="checkbox" name="dance" value="dance">dance
-    <input type="checkbox" name="painting" value="painting">painting
-    <br><br>
-
-    <label>DATE OF BIRTH</label>
-    <input type="date"><br><br>
-
-    <label>MOBILE NO.</label>
-    <input type="text" name="countrycode" value="+91" size="2" />
-    <input type="text" name="mobile no." size="10" /><br><br>
-
-    
-
-    <label>EMAIL</label>
-    <input type="email"  id="email"  name="email"  placeholder="Enter your email" required>
-       <br><br>
-
-  
-    PASSWORD:<input type="password" id="pwd" name="pwd"><br><br>
-    CONFIRM PASSWORD: <input type="password" id="pwd" name="pwd"><br><br>
-
-    
-    <input type="submit" class="submitButton" id="submitButton" value="Submit">
-    <input type="reset" class="resetButton" id="resetButton" value="Reset"><br><br>
-
-    ALREADY A USER?
-    <a href="loginpage.html">login</a>
- </form>
-</body>
-<body style="background-color:  rgb(247, 111, 254);">
-      <div class="main">
-            <h1 style="text-align: center;">LOGIN PAGE </h1>
-            <h3>Enter your login credentials</h3>
-            <form action="">
-                  <label for="first">
-                        EMAIL:
-                  </label>
-                  <input type="email" 
-                         id="email" 
-                         name="email" 
-                         placeholder="Enter your email" required>
-                         <br><br>
-
-                  <label for="password">
-                        PASSWORD:
-                  </label>
-                  <input type="password"
-                         id="password" 
-                         name="password"
-                         placeholder="Enter your Password" required>
-                         <br><br>
-
-                  <div class="wrap">
-                        <button type="submit"
-                                onclick="solve()">
-                              Submit
-                        </button>
-                  </div>
-            </form>
-            <p>Not registered?
-                  <a href="resitrationform.html"
-                     style="text-decoration: rgb(111, 2, 87);">
-                        Create an account
-                  </a>
-            </p>
-      </div>
-      
-</body>
-</html>
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>PR3</title> 
+</head> 
+ 
+<body> 
+    <form> 
+        <label for="fname">First Name:</label> 
+        <input type="text" id="fname" name="fname"><br><br> 
+ 
+        <label for="lname">Last name:</label> 
+        <input type="text" id="lname" name="fname"><br><br> 
+ 
+        <input type="submit" value="submit"><br><br> 
+    </form> 
+    <button type="button">Click Me!</button><br> 
+ 
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> 
+    <label for="vehicle1"> I have a bike</label><br> 
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+ <label for="vehicle2"> I have a car</label><br> 
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"> 
+    <label for="vehicle3"> I have a boat</label><br> 
+ 
+    <input type="date" id="date" name="date"> 
+    <label for="date">Date</label> 
+ 
+    <form> 
+        <input type="file" id="myFile" name="filename"> 
+        <input type="submit"> 
+      </form> 
+</body> 
+</html> 
